@@ -155,7 +155,7 @@ class AddressBook(UserDict):
                     name = Name(key)
                     phones_data, birthday = value[:-1], value[-1]
 
-                    if len(birthday) != 0 and value[-1].find('-') > 0: 
+                    if birthday: 
                         birth_day = True 
                     else:   
                         birth_day = False
